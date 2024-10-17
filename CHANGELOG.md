@@ -5,6 +5,7 @@
 - MODULE_PATH constant
 
 ### Changed
+- readme
 
 ### Fixed
 
