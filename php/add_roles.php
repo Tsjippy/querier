@@ -2,13 +2,8 @@
 namespace SIM\QUERIER;
 use SIM;
 
-add_filter('sim_module_updated', __NAMESPACE__.'\moduleUpdated', 10, 2);
-function moduleUpdated($options, $moduleSlug){
-	//module slug should be the same as grandparent folder name
-	if($moduleSlug != MODULE_SLUG){
-		return $options;
-	}
-
+add_filter('sim_module_querier_after_save', __NAMESPACE__.'\moduleUpdated');
+function moduleUpdated($options){
 	$roleSet = get_role( 'contributor' )->capabilities;
 
 	// Only add the new role if it does not exist
