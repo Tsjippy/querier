@@ -4,12 +4,17 @@
 ### Added
 
 ### Changed
-- exclude .vscode from releases
-- updated github workflow versions
 
 ### Fixed
 
 ### Updated
+
+## [10.0.0] - 2026-05-01
+
+
+### Changed
+- exclude .vscode from releases
+- updated github workflow versions
 
 ## [8.0.6] - 2025-10-13
 
