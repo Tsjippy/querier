@@ -12,7 +12,7 @@ namespace TSJIPPY\QUERIER;
  * Requires PHP:         8.3
  * Tested up to:         7.0
  * Plugin URI:            https://github.com/Tsjippy/querier
- * Tested:                6.9
+ * Tested:               7.0
  * TextDomain:            tsjippy
  * Requires Plugins:    
  * License: GPLv2 or later
@@ -47,6 +47,14 @@ register_activation_hook(__FILE__, function () {
             'Enquirer',
             $roleSet
         );
+    }
+
+    if(file_exists(__DIR__  . '/shared-functionality/loader.php')){
+        require_once(__DIR__  . '/shared-functionality/loader.php');
+    }
+
+    if(function_exists('TSJIPPY\activate')){
+        \TSJIPPY\activate();
     }
 });
 
