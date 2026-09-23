@@ -5,13 +5,13 @@ namespace TSJIPPY\QUERIER;
 /**
  * Plugin Name:          Tsjippy Querier
  * Description:          This plugin adds the role of querier. This allows to give them a certain permission, but not the full rights other users
- * Version:              10.5.6
+ * Version:              10.5.7
  * Author:               Ewald Harmsen
  * AuthorURI:            harmseninnigeria.nl
  * Requires at least:    6.3
  * Requires PHP:         8.3
  * Plugin URI:           https://github.com/Tsjippy/querier
- * Tested:               7.1.1
+ * Tested:               7.1.2
  * TextDomain:           tsjippy
  * Requires Plugins:    
  * License: GPLv2 or later
